@@ -19,7 +19,7 @@ a {
 h1,
 h2 {
   font-weight: 400;
-  padding: 10px;
+  padding: 0.6rem;
 }
 
 .flexcontainer {
@@ -29,14 +29,14 @@ h2 {
 }
 
 /* Header */
-#showcase {
+#header {
   background: url(../images/home_1200x.jpg) center/cover no-repeat;
   height: 100vh;
   display: flex;
   align-items: flex-start;
 }
 
-#showcase h1 {
+#header h1 {
   align-self: flex-end;
   color: white;
 }
@@ -46,39 +46,46 @@ nav {
   flex-grow: 1;
 }
 
+header #nav-bar {
+  position: fixed;
+  background: black;
+  width: 100vw;
+}
+
+#nav-bar a {
+  color: white;
+}
+
 nav span {
   display: inline-block;
-  padding: 20px 10px;
+  padding: 1.2rem 0.6rem;
 }
 
 header img {
   height: 50px;
-  padding-left: 20px;
+  padding-left: 1.2rem;
   align-self: flex-start;
-}
-
-#navbar a {
-  color: white;
+  z-index: 10;
 }
 
 #showcase img {
   height: 50px;
-  padding-left: 20px;
+  padding-left: 1.2rem;
 }
 
 /* Mission */
 #mission {
   height: 30vh;
   border-bottom: 1px solid #51a7b0;
-  margin-left: 10px;
-  margin-right: 10px;
-  padding-top: 20px;
+  margin-left: 0.6rem;
+  margin-right: 0.6rem;
+  padding-top: 1.2rem;
 }
 
 #mission span {
   color: #51a7b0;
-  margin-right: 10px;
-  margin-left: 10px;
+  margin-right: 0.6rem;
+  margin-left: 0.6rem;
 }
 #mission p {
   color: #51a7b0;
@@ -89,31 +96,31 @@ button {
   color: white;
   background: black;
   border: none;
-  height: 45px;
-  width: 150px;
-  padding: 10px;
+  height: 2.5rem;
+  width: 10rem;
+  padding: 0.6rem;
   display: inline;
   border-radius: O;
-  margin-left: 10px;
-  margin-top: 15px;
+  margin-left: 0.6rem;
+  margin-top: 0.9rem;
   text-align: left;
   font-family: inherit;
 }
 
 #email {
   display: inline;
-  margin-left: 10px;
-  padding: 15px;
-  width: 300px;
+  margin-left: 0.6rem;
+  padding: 0.9rem;
+  width: 18.7rem;
   font-family: inherit;
 }
 
 /* Video */
 #video {
-  height: 350px;
+  height: 22rem;
   border-bottom: 1px solid #51a7b0;
-  margin: 0 10px;
-  padding: 20px 0;
+  margin: 0 0.6rem;
+  padding: 1.2rem 0;
 }
 
 /* Store */
@@ -122,31 +129,31 @@ button {
   justify-items: center;
   align-items: center;
   max-width: 100%;
-  height: 450px;
+  height: 28rem;
   border-bottom: 1px solid #dc6039;
-  margin: 10px;
+  margin: 0.6rem;
 }
 
 .item img {
-  height: 300px;
-  margin: 10px;
+  height: 18.7rem;
+  margin: 0.6rem;
   display: block;
 }
 
 .items span {
-  margin-left: 10px;
+  margin-left: 0.6rem;
 }
 
 /* CTA */
 #cta {
-  height: 200px;
+  height: 12.5rem;
   border-bottom: 1px solid #dc6039;
-  margin: 0 10px;
+  margin: 0 0.6rem;
 }
 
 #cta p {
-  padding-top: 10px;
-  margin-left: 10px;
+  padding-top: 0.6rem;
+  margin-left: 0.6rem;
   color: rgb(155, 155, 155);
 }
 
@@ -156,8 +163,8 @@ button {
 }
 
 .location {
-  padding: 10px;
-  margin: 5px 20px;
+  padding: 0.6rem;
+  margin: 5px 1.2rem;
   flex-basis: 280px;
   display: flex;
   flex-direction: column;
@@ -173,7 +180,7 @@ button {
 
 #footer span {
   display: inline-block;
-  padding: 20px 10px;
+  padding: 1.2rem 0.6rem;
 }
 
 /* Media Queries */
