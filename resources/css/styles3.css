@@ -49,7 +49,10 @@ nav {
 header #nav-bar {
   position: fixed;
   background: black;
-  width: 100vw;
+  margin-top: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
 
 #nav-bar a {
@@ -117,10 +120,13 @@ button {
 
 /* Video */
 #video {
-  height: 22rem;
   border-bottom: 1px solid #51a7b0;
   margin: 0 0.6rem;
   padding: 1.2rem 0;
+}
+
+#video > video {
+  width: 600px;
 }
 
 /* Store */
@@ -128,14 +134,14 @@ button {
   display: flex;
   justify-items: center;
   align-items: center;
-  max-width: 100%;
+  width: 100vw;
   height: 28rem;
   border-bottom: 1px solid #dc6039;
   margin: 0.6rem;
 }
 
 .item img {
-  height: 18.7rem;
+  width: 95%;
   margin: 0.6rem;
   display: block;
 }
@@ -184,3 +190,19 @@ button {
 }
 
 /* Media Queries */
+@media screen and (max-width: 550px) {
+  .items {
+    display: inline-block;
+  }
+  .items > span {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #video {
+    width: 100vw;
+    height: auto;
+    margin: 2rem;
+  }
+}
